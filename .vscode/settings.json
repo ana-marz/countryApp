@@ -1,0 +1,85 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "files.eol": "\n",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "editor.wrappingIndent": "indent",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.formatOnSave": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "One Dark italic",
+        "scope": [
+          "comment",
+          "entity.other.attribute-name",
+          "keyword",
+          "markup.underline.link",
+          "storage.modifier",
+          "storage.type",
+          "string.url",
+          "variable.language.super",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "One Dark italic reset",
+        "scope": [
+          "keyword.operator",
+          "keyword.other.type",
+          "storage.modifier.import",
+          "storage.modifier.package",
+          "storage.type.built-in",
+          "storage.type.function.arrow",
+          "storage.type.generic",
+          "storage.type.java",
+          "storage.type.primitive"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.minimap.enabled": false,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "npm-intellisense.showBuildInLibs": true,
+  "terminal.integrated.fontSize": 13,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Dobri Next -C03- Cupcake",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#a71ab9ad",
+    "titleBar.activeForeground": "#ffffff",
+    "activityBar.background": "#3d0038a8"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.linkedEditing": true,
+  "git.autofetch": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.fileNesting.enabled": true,
+  "files.autoSave": "onWindowChange",
+  "explorer.compactFolders": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+{
+}

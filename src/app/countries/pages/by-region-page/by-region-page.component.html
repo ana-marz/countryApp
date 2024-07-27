@@ -1,0 +1,21 @@
+<h2>por región</h2>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <!-- searchbox -->
+     <!--  crear un emitter en el searchboxcomponent -->
+    <shared-search-box
+     (onValue)="searchByRegion($event)"
+      placeholder="busqueda por region"></shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <!-- resultados -->
+    <countries-table [countries]="countries"></countries-table>
+
+  </div>
+</div>
