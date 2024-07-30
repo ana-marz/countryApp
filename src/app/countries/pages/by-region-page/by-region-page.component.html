@@ -4,17 +4,23 @@
 <div class="row">
   <div class="col text-center">
     <!-- searchbox -->
-    <button class="btn mx-1" *ngFor="let region of regions" (click)="searchByRegion(region)" [ngClass]="{ 'btn-outline-primary' : selectedRegion === region }">
-      {{region}}
+    <button
+      class="btn mx-1"
+      *ngFor="let region of regions"
+      (click)="searchByRegion(region)"
+      [ngClass]="{ 'btn-outline-primary': selectedRegion === region }"
+    >
+      {{ region }}
     </button>
   </div>
 </div>
 
 <div class="row">
   <div class="col">
-    <hr>
+    <hr />
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
     <!-- resultados -->
     <countries-table [countries]="countries"></countries-table>
-
   </div>
 </div>
+

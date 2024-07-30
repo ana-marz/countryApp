@@ -1,4 +1,11 @@
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { debounceTime, Subject, Subscription } from 'rxjs';
 
 @Component({
@@ -7,12 +14,14 @@ import { debounceTime, Subject, Subscription } from 'rxjs';
   styles: ``,
 })
 export class SearchBoxComponent implements OnInit, OnDestroy {
-
   private debouncer: Subject<string> = new Subject<string>();
   private debouncerSubscription?: Subscription;
 
   @Input()
   public placeholder: string = '';
+
+  @Input()
+  public initialValue: string = '';
 
   @Output()
   public onValue = new EventEmitter<string>();
@@ -30,7 +39,7 @@ export class SearchBoxComponent implements OnInit, OnDestroy {
       // hasta que el observable deja de emitir valores por un segundo no manda el valor al subscribe
       .subscribe((value) => {
         // console.log('debouncer value', value);
-        this.onDebounce.emit(value) // el emisor emite el valor
+        this.onDebounce.emit(value); // el emisor emite el valor
       });
   }
 

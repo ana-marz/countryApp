@@ -12,6 +12,7 @@ import { Country } from '../../interfaces/country.interface';
 export class CountryPageComponent implements OnInit {
   public country?: Country;
 
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private countriesService: CountriesService,

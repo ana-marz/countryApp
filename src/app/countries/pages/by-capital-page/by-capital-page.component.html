@@ -4,20 +4,22 @@
 <div class="row">
   <div class="col">
     <!-- searchbox -->
-     <!--  crear un emitter en el searchboxcomponent -->
-       <!-- (onValue)="searchByCapital($event)" lo hemos cambiado por el onDebounce -->
+    <!--  crear un emitter en el searchboxcomponent -->
+    <!-- (onValue)="searchByCapital($event)" lo hemos cambiado por el onDebounce -->
     <shared-search-box
-     (onDebounce)="searchByCapital($event)"
-      placeholder="busqueda por capital"></shared-search-box>
+      (onDebounce)="searchByCapital($event)"
+      [initialValue]="initialValue"
+      placeholder="busqueda por capital"
+    ></shared-search-box>
   </div>
 </div>
 
 <div class="row">
   <div class="col">
-    <hr>
+    <hr />
     <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
     <!-- resultados -->
     <countries-table [countries]="countries"></countries-table>
-
   </div>
 </div>
+
